@@ -22,7 +22,7 @@ const Origin = () => {
                     <p className='mt-5 text-xl'>Today UZWAYS runs 30 power units across the lower 48, hauling dry van freight for partners who need a carrier that actually shows up — and drivers who want a company that has their back.</p>
                 </div>
 
-                <div className='w-450 bg-primary-light h-130 p-10 border border-gray-800'>
+                <div className='w-450 bg-primary h-130 p-10 border border-gray-800'>
                     <h1 className='font-bigshoulders font-bold text-3xl tracking-[1px]'>WHAT THE NAME MEANS</h1>
 
                     <div className='flex items-end justify-center gap-5 mt-10'>
