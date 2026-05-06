@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
 :root {
+  --near-black: #04080F;
   --primary: #0A1322;
   --foreground: #e4e4e4;
   --secondary: #102373;
+  --orange: #bf8143;
+  --primary-light:#0F1B2E;
 }
 
 @theme inline {
@@ -17,6 +20,8 @@
   --color-primary: #0A1322;
   --color-secondary: #102373;
   --color-orange: #bf8143;
+  --color-primary-light:#0F1B2E;
+  --color-near-black:#04080F;
   --font-montserrat: 'Montserrat', sans-serif;
   --font-bigshoulders: 'Big Shoulders', sans-serif;
   --font-hankengrotesk: 'Hanken Grotesk', sans-serif;
