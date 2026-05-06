@@ -5,6 +5,7 @@ import InfiniteBanner from "../components/Banner/InfiniteBanner";
 import Origin from "../components/Origin/Origin";
 import Services from "../components/Services/Services";
 import ForDrivers from "../components/ForDrivers/ForDrivers";
+import Fleet from "../components/Fleet/Fleet";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <hr className="mt-20 border-gray-800 w-full" />
       <Services />
       <ForDrivers />
+      <Fleet />
     </div>
   );
 }
