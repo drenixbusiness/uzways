@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import React from 'react'
-import Button from '../Button/Button'
+import Button from '../Button/ButtonDefault'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const Header = () => {

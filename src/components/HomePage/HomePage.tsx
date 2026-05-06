@@ -1,4 +1,6 @@
 import React from 'react'
+import ButtonDefault from '../Button/ButtonDefault'
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const HomePage = () => {
     return (
@@ -32,6 +34,17 @@ const HomePage = () => {
                             <li className='mt-3'>Trisura · A-Rated</li>
                             <li className='mt-3'>48 Continental States</li>
                         </ul>
+                    </div>
+                </div>
+
+                <div className='max-w-160 flex items-center justify-start gap-10 mt-15'>
+                    <div className='bg-orange text-black p-5 w-60 h-15 flex items-center justify-center gap-3'>
+                        <ButtonDefault text='BOOK FREIGHT' />
+                        <ArrowRightAltIcon  />
+                    </div>
+                    <div className='border-1 p-5 w-70 h-15 flex items-center justify-center gap-3'>
+                        <ButtonDefault text='DRIVER OPPORTUNITIES' />
+                        <ArrowRightAltIcon  />
                     </div>
                 </div>
             </div>

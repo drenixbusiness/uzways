@@ -7,7 +7,7 @@ interface ButtonProps {
     type?: 'button' | 'submit' | 'reset'
 }
 
-const Button = ({ text, className, disabled, type }: ButtonProps) => {
+const ButtonDefault = ({ text, className, disabled, type }: ButtonProps) => {
   return (
     <button className={className} disabled={disabled} type={type}>
         {text}
@@ -15,4 +15,4 @@ const Button = ({ text, className, disabled, type }: ButtonProps) => {
   )
 }
 
-export default Button
+export default ButtonDefault
