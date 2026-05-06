@@ -21,10 +21,19 @@
   --font-bigshoulders: 'Big Shoulders', sans-serif;
   --font-hankengrotesk: 'Hanken Grotesk', sans-serif;
   --font-jetbrainsmono: 'JetBrains Mono', monospace;
+  --animate-marquee: marquee 60s linear infinite;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {}
 
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 body {
