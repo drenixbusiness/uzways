@@ -8,7 +8,7 @@ import ForDrivers from "../components/ForDrivers/ForDrivers";
 
 export default function Home() {
   return (
-    <div className="bg-near-black">
+    <div className="bg-near-black max-w-[1900px] mx-auto">
       <Header />
       <HomePage />
       <InfiniteBanner />
