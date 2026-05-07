@@ -3,7 +3,7 @@ import OppDrivers from './OppDrivers'
 
 const ForDrivers = () => {
     return (
-        <div className='px-85 py-25 mt-25 bg-primary border-t-1 border-gray-800'>
+        <div className='px-75 py-25 mt-25 bg-primary border-t-1 border-gray-800'>
             <div className='flex items-end justify-between'>
                 <div>
                     <h1 className='font-bigshoulders font-bold text-8xl leading-[95px]'>PAY THAT <br />RESPECTS</h1>

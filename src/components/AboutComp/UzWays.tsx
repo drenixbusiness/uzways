@@ -35,7 +35,7 @@ const items = [
 
 const UzWays = () => {
   return (
-    <div className="px-85 mt-15">
+    <div className="px-75 mt-15">
       <div className='flex items-end justify-between'>
         <div>
           <h1 className='font-bigshoulders font-bold text-8xl leading-[95px]'>THE ROAD <br /> TAUGHT US</h1>

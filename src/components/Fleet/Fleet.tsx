@@ -13,7 +13,7 @@ const list = [
 
 const Fleet = () => {
     return (
-        <div className='px-85 py-5 mt-25'>
+        <div className='px-75 py-5 mt-25'>
             <div className='flex items-end justify-between'>
                 <div>
                     <h1 className='font-bigshoulders font-bold text-8xl leading-[95px]'>THIRTY <br /> TRUCKS.</h1>

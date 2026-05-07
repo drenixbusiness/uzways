@@ -7,6 +7,7 @@ import Services from "../components/Services/Services";
 import ForDrivers from "../components/ForDrivers/ForDrivers";
 import Fleet from "../components/Fleet/Fleet";
 import UzWays from "../components/AboutComp/UzWays";
+import Contact from "../components/Contact/Contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <ForDrivers />
       <Fleet />
       <UzWays />
+      <Contact />
     </div>
   );
 }

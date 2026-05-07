@@ -3,7 +3,7 @@ import ServicesCard from '../Card/ServicesCard'
 
 const Services = () => {
     return (
-        <div className='px-85 mt-40'>
+        <div className='px-75 mt-40'>
             <div className='flex items-end justify-between'>
                 <div>
                     <h1 className='font-bigshoulders font-bold text-8xl leading-[95px]'>DRY VAN <br />FREIGHT,</h1>
