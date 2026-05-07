@@ -3,7 +3,7 @@ import ServicesCard from '../Card/ServicesCard'
 
 const Services = () => {
     return (
-        <div className='px-6 sm:px-12 lg:px-75 mt-20 lg:mt-40'>
+        <div id="services" className='px-6 sm:px-12 lg:px-75 mt-20 lg:mt-40'>
             <div className='flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-0'>
                 <div>
                     <h1 className='font-bigshoulders font-bold text-5xl sm:text-7xl lg:text-8xl leading-tight lg:leading-[95px]'>

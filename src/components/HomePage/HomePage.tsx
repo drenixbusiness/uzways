@@ -4,7 +4,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const HomePage = () => {
     return (
-        <div className="px-6 sm:px-12 lg:px-75 py-5">
+        <div className="px-6 sm:px-12 lg:px-75 py-5 mt-35">
             <div className='mt-10 sm:mt-15'>
                 <div className='flex items-center justify-between font-jetbrainsmono text-xs sm:text-sm text-gray-500'>
                     <p>TENNESSEE . EST . 2021</p>

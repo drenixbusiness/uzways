@@ -2,7 +2,7 @@ import React from 'react'
 
 const Origin = () => {
     return (
-        <div className='px-6 sm:px-12 lg:px-75 py-5 mt-12 lg:mt-20'>
+        <div id="about" className='px-6 sm:px-12 lg:px-75 py-5 mt-12 lg:mt-20'>
 
             {/* Header section */}
             <div className='flex flex-col lg:flex-row lg:items-end lg:justify-between font-hankengrotesk gap-8 lg:gap-0'>

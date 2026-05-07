@@ -13,7 +13,7 @@ const list = [
 
 const Fleet = () => {
     return (
-        <div className='px-6 sm:px-12 lg:px-75 py-5 mt-16 sm:mt-20 lg:mt-25'>
+        <div id="fleet" className='px-6 sm:px-12 lg:px-75 py-5 mt-16 sm:mt-20 lg:mt-25'>
 
             {/* Header */}
             <div className='flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-0'>
