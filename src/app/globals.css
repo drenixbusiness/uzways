@@ -45,4 +45,5 @@ body {
   background: var(--primary);
   color: var(--foreground);
   font-family: var(--font-hankengrotesk);
+  scroll-behavior: smooth;
 }
