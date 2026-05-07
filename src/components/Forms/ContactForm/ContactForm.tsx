@@ -41,7 +41,7 @@ export default function ContactForm() {
       </div>
 
       {/* NAME + COMPANY */}
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div>
           <label htmlFor="name" className={labelClass}>Name</label>
           <input
@@ -65,7 +65,7 @@ export default function ContactForm() {
       </div>
 
       {/* EMAIL + PHONE */}
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div>
           <label htmlFor="email" className={labelClass}>Email</label>
           <input

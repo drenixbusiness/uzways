@@ -59,22 +59,21 @@ const CardList = [
 
 const ServicesCard = () => {
     return (
-        <div className='grid grid-cols-3 mt-15'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-15'>
             {CardList.map((item, index) => (
-                <div key={index} className='flex flex-col justify-center gap-3 hover:bg-primary p-10 border border-gray-800'>
-                    <item.icon sx={{ fontSize: 56, color: 'var(--color-orange)' }} />
-                    <h1 className='font-bigshoulders font-bold text-3xl tracking-[1px]'>{item.title}</h1>
-                    <p className='text-gray-400 text-[14px] mt-5'>{item.desc}</p>
-                    <div className='flex items-center justify-center gap-1 mt-5'>
-                        <div className='bg-darkorange border border-gray-600 w-40 h-10 flex items-center justify-center text-[12px]'>
-                            <p className='text-white font-bold'>{item.miniButton1}</p>
-                        </div>
-                        <div className='bg-darkorange border border-gray-600 w-40 h-10 flex items-center justify-center'>
-                            <p className='text-white text-[12px] font-bold'>{item.miniButton2}</p>
-                        </div>
-                        <div className='bg-darkorange border border-gray-600 w-40 h-10 flex items-center justify-center'>
-                            <p className='text-white text-[12px] font-bold'>{item.miniButton3}</p>
-                        </div>
+                <div key={index} className='flex flex-col justify-center gap-3 hover:bg-primary p-6 sm:p-8 lg:p-10 border border-gray-800'>
+                    <item.icon sx={{ fontSize: 48, color: 'var(--color-orange)' }} />
+                    <h1 className='font-bigshoulders font-bold text-2xl lg:text-3xl tracking-[1px]'>{item.title}</h1>
+                    <p className='text-gray-400 text-[13px] sm:text-[14px] mt-3 sm:mt-5'>{item.desc}</p>
+                    <div className='flex items-center justify-start sm:justify-center gap-1 mt-3 sm:mt-5 flex-wrap'>
+                        {[item.miniButton1, item.miniButton2, item.miniButton3].map((label, i) => (
+                            <div
+                                key={i}
+                                className='bg-darkorange border border-gray-600 h-9 sm:h-10 px-3 flex items-center justify-center'
+                            >
+                                <p className='text-white text-[11px] sm:text-[12px] font-bold whitespace-nowrap'>{label}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             ))}

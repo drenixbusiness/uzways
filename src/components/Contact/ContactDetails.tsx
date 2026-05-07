@@ -35,26 +35,26 @@ const list = [
 
 const ContactDetails = () => {
   return (
-    <div className="border border-white/10 bg-primary-light px-10 py-10">
-      <h1 className="font-bigshoulders font-bold text-5xl mb-10 tracking-wide">
+    <div className="border border-white/10 bg-primary-light px-5 sm:px-7 lg:px-10 py-7 sm:py-8 lg:py-10">
+      <h1 className="font-bigshoulders font-bold text-3xl sm:text-4xl lg:text-5xl mb-7 sm:mb-8 lg:mb-10 tracking-wide">
         REACH UZWAYS
       </h1>
 
       {list.map((item) => (
         <div
           key={item.title}
-          className="flex gap-6 py-6 border-t border-white/10"
+          className="flex gap-4 sm:gap-6 py-4 sm:py-5 lg:py-6 border-t border-white/10"
         >
-          <span className="w-24 shrink-0 text-[10px] tracking-[0.25em] uppercase text-gray-500 pt-0.5">
+          <span className="w-16 sm:w-20 lg:w-24 shrink-0 text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.25em] uppercase text-gray-500 pt-0.5">
             {item.title}
           </span>
-          <div>
+          <div className="min-w-0">
             {item.info.map((line) => (
-              <p key={line} className="text-foreground text-sm leading-6">
+              <p key={line} className="text-foreground text-xs sm:text-sm leading-6 break-words">
                 {line}
               </p>
             ))}
-            <p className="font-jetbrainsmono text-xs text-gray-600 mt-1">
+            <p className="font-jetbrainsmono text-[10px] sm:text-xs text-gray-600 mt-1">
               {item.text}
             </p>
           </div>

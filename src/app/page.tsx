@@ -12,7 +12,7 @@ import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-near-black max-w-[1900px] mx-auto">
+    <div className="bg-near-black w-full max-w-[1900px] mx-auto overflow-x-hidden">
       <Header />
       <HomePage />
       <InfiniteBanner />
