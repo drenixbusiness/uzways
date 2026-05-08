@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Header from "../components/Header/Header";
 import HomePage from "../components/HomePage/HomePage";
 import InfiniteBanner from "../components/Banner/InfiniteBanner";
 import Origin from "../components/Origin/Origin";
@@ -13,7 +11,6 @@ import Footer from "../components/Footer/Footer";
 export default function Home() {
   return (
     <div className="bg-near-black w-full max-w-[1900px] mx-auto overflow-x-hidden">
-      <Header />
       <HomePage />
       <InfiniteBanner />
       <Origin />

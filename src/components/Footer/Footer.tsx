@@ -1,7 +1,20 @@
 import React from 'react'
+import Link from 'next/link'
 
-const companyLinks = ['Our story', 'Fleet', 'Services', 'Contact']
-const driverLinks = ['Company Driver', 'Owner Operator', 'Apply', 'Safety']
+const companyLinks = [
+  { label: 'Our story', href: '#about' },
+  { label: 'Fleet', href: '#fleet' },
+  { label: 'Services', href: '#services' },
+  { label: 'Contact', href: '#contact' },
+  { label: 'Privacy Policy', href: '/privacy-policy' },
+]
+
+const driverLinks = [
+  { label: 'Company Driver', href: '#drivers' },
+  { label: 'Owner Operator', href: '#drivers' },
+  { label: 'Apply', href: '#contact' },
+  { label: 'Safety', href: '#contact' },
+]
 const reachUs = [
   '(615) 578-1333',
   'safety@uzwaysllc.info',
@@ -33,10 +46,10 @@ const Footer = () => {
           </h3>
           <ul className="flex flex-col gap-3 sm:gap-4">
             {companyLinks.map((link) => (
-              <li key={link}>
-                <a href="#" className="text-gray-400 text-sm hover:text-foreground transition-colors">
-                  {link}
-                </a>
+              <li key={link.label}>
+                <Link href={link.href} className="text-gray-400 text-sm hover:text-foreground transition-colors">
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -49,10 +62,10 @@ const Footer = () => {
           </h3>
           <ul className="flex flex-col gap-3 sm:gap-4">
             {driverLinks.map((link) => (
-              <li key={link}>
-                <a href="#" className="text-gray-400 text-sm hover:text-foreground transition-colors">
-                  {link}
-                </a>
+              <li key={link.label}>
+                <Link href={link.href} className="text-gray-400 text-sm hover:text-foreground transition-colors">
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
