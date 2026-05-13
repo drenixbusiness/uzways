@@ -7,6 +7,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt'
 import MenuIcon from '@mui/icons-material/Menu'
 import ClearIcon from '@mui/icons-material/Clear'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 const navLinks = [
     { href: '#about', label: 'About' },
@@ -17,6 +18,7 @@ const navLinks = [
 ]
 
 const Header = () => {
+    const router = useRouter()
     const [menuOpen, setMenuOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
 
@@ -63,9 +65,10 @@ const Header = () => {
                 <div className='hidden md:flex items-center gap-2 bg-orange rounded-[3px] px-2'>
                     <Button
                         text='DRIVE WITH US'
-                        className='text-white py-2 rounded-md'
+                        className='text-white py-2 rounded-md cursor-pointer'
                         disabled={false}
                         type='button'
+                        onClick={() => router.push('#contact')}
                     />
                     <ArrowRightAltIcon className='text-white' />
                 </div>
@@ -105,9 +108,10 @@ const Header = () => {
                         >
                             <Button
                                 text='DRIVE WITH US'
-                                className='text-white text-sm font-bold rounded-md'
+                                className='text-white text-sm font-bold rounded-md cursor-pointer'
                                 disabled={false}
                                 type='button'
+                                onClick={() => router.push('#contact')}
                             />
                             <ArrowRightAltIcon className='text-white' />
                         </div>
