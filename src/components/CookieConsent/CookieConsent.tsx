@@ -29,7 +29,7 @@ export default function CookieConsent() {
         <>
             <div className="fixed inset-0 z-[9998] bg-black/45 backdrop-blur-sm" aria-hidden />
             <div
-                className="fixed z-[9999] bottom-8 left-1/2 -translate-x-1/2 w-[min(480px,calc(100%-32px))] bg-white rounded-[22px] p-8 sm:p-10 shadow-2xl border border-gray-200 text-center"
+                className="fixed z-[9999] top-80 left-1/2 -translate-x-1/2 w-[min(480px,calc(100%-32px))] bg-white rounded-[22px] p-8 sm:p-10 shadow-2xl border border-gray-200 text-center"
                 role="dialog"
                 aria-label="Cookie consent"
             >
@@ -52,13 +52,13 @@ export default function CookieConsent() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                     <button
-                        className="flex-1 py-3.5 px-5 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-bold text-sm uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+                        className="flex-1 py-2.5 px-2 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white rounded-full font-bold text-sm uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
                         onClick={handleAccept}
                     >
                         Accept
                     </button>
                     <button
-                        className="flex-1 py-3.5 px-5 bg-transparent text-gray-700 border border-gray-300 rounded-full font-bold text-sm uppercase tracking-wider transition-all duration-300 hover:bg-gray-50 hover:border-gray-400 hover:-translate-y-0.5"
+                        className="flex-1 py-2.5 px-2 cursor-pointer bg-transparent text-gray-700 border border-gray-300 rounded-full font-bold text-sm uppercase tracking-wider transition-all duration-300 hover:bg-gray-50 hover:border-gray-400 hover:-translate-y-0.5"
                         onClick={handleDecline}
                     >
                         Decline

@@ -37,6 +37,11 @@ const Footer = () => {
           <p className="mt-5 sm:mt-6 text-gray-500 text-sm leading-7 max-w-xs">
             Unity Zone, multiple ways. A Tennessee motor carrier hauling dry van freight across the United States — built on the road, not in an office.
           </p>
+          <p className="mt-5 sm:mt-6 text-gray-500 text-sm leading-7 max-w-xs">
+            This site uses cookies to improve your experience. See our <Link href="/privacy-policy" className="text-orange hover:text-foreground transition-colors">
+              Privacy Policy
+            </Link> for details.
+          </p>
         </div>
 
         {/* Company */}
