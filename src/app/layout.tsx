@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat, Big_Shoulders, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header/Header";
+import CookieConsent from "../components/CookieConsent/CookieConsent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,6 +56,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
+        <CookieConsent />
       </body>
     </html>
   );

@@ -21,10 +21,17 @@ export default function ContactForm() {
   const [aboutThem, setAboutThem] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [responseMessage, setResponseMessage] = useState('');
+  const [agreed, setAgreed] = useState(false);
+  const [showCheckboxError, setShowCheckboxError] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
+
+    if (!agreed) {
+      setShowCheckboxError(true);
+      return;
+    }
+    setShowCheckboxError(false);
 
     const formData = { name, company, email, phone, aboutThem };
 
@@ -150,7 +157,46 @@ export default function ContactForm() {
         />
       </div>
 
-      {/* SEND MESSAGE */}
+      {/* AGREEMENT CHECKBOX */}
+      <div>
+        <label className={`flex items-start gap-3 text-left cursor-pointer ${showCheckboxError ? "text-red-500" : ""}`}>
+          <div className="relative flex items-center mt-0.5 flex-shrink-0">
+            <input
+              type="checkbox"
+              checked={agreed}
+              onChange={(e) => {
+                setAgreed(e.target.checked);
+                if (e.target.checked) setShowCheckboxError(false);
+              }}
+              className={`appearance-none w-5 h-5 rounded border-2 bg-transparent cursor-pointer transition-all duration-200
+                    ${agreed ? "bg-blue-600 border-blue-600" : "border-white/30"}
+                    ${showCheckboxError ? "border-red-500 ring-4 ring-red-500/10" : ""}
+                `}
+            />
+            {agreed && (
+              <svg
+                className="absolute left-[5px] top-[5px] w-[11px] h-[11px] text-white pointer-events-none"
+                viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="2.5"
+              >
+                <path d="M1 5L4 8L9 1" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            )}
+          </div>
+          <span className="text-[13px] text-gray-400 leading-snug select-none">
+            By checking this box you agree to our{" "}
+            <a href="/privacy-policy" className="text-blue-400 underline hover:text-blue-300 transition-colors">
+              Privacy Policy
+            </a>{" "}
+            and consent to receive communications from UzWays LLC.
+          </span>
+        </label>
+        {showCheckboxError && (
+          <p className="text-[12px] text-red-500 font-semibold text-left mt-2 ml-8">
+            You must agree before submitting.
+          </p>
+        )}
+      </div>
+
       <button
         type="submit"
         disabled={isSubmitting}
